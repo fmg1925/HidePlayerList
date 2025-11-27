@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.fmg1925.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"NoTabMixin",
+        "NoSuggestionMixin",
+        "NoSocialInteractionsMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

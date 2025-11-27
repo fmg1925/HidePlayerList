@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "hideplayerlist",
+	"version": "${version}",
+	"name": "Hide Player List",
+	"description": "Hide all player lists, no tab list, no social interactions, no player reporting, no death messages, no w, msg, tell, no locator bar, no name recommendations when typing, no achievement messages, no joining/leaving messages\nRequired on both client and server",
+	"authors": [
+		"fmg1925"
+	],
+	"contact": {
+		"homepage": "https://porneliushubert.fun",
+		"sources": "https://porneliushubert.fun"
+	},
+	"license": "UNLICENSE",
+	"icon": "icon.png",
+    "environment": "*",
+    "entrypoints": {
+      "main": [
+        "com.fmg1925.HidePlayerList"
+      ],
+      "client": [
+        "com.fmg1925.HidePlayerListClient"
+      ]
+    },
+	"mixins": [
+		"hideplayerlist.mixins.json",
+		{
+			"config": "hideplayerlist.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

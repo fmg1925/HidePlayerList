@@ -1,0 +1,24 @@
+{
+	"required": true,
+	"package": "com.fmg1925.mixin",
+	"compatibilityLevel": "JAVA_21",
+    "mixins": [
+      "DeathMessagesMixin",
+      "NoServerListMixin",
+      "NoAdvancementsMixin",
+      "NoPlayerSystemMessagesMixin",
+      "SpoofPlayerCountMixin",
+      "HidePlayerLeavingMixin",
+      "ScoreboardMixin",
+      "CuestionXPBarMixin",
+      "NoDeathMessagesMixin",
+      "NoMsgMixin",
+      "NoListMixin"
+    ],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
